@@ -6,6 +6,8 @@ Solved problem from Kaggle platform: [Airbus Ship Detection Challenge](https://w
 
 The dataset was taken from the data tab [dataset](https://www.kaggle.com/c/airbus-ship-detection/data).
 
+The whole process of solving a task in ```main_notebook.ipynb```
+
 ## Installation
 
 You can download this repository by running this command in your terminal:
