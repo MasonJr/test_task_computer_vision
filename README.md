@@ -36,7 +36,7 @@ I used recommended tools and methods to accomplish the task:
 
 ## Description
 
-! The model has been trained in only three epochs to show its correct operation and to get some result in the test sample.
+**The model has been trained in only three epochs to show its correct work and to get some result in the test sample.**
 
 A water surface image segmentation model has been created.
 Implementation language Python. It used the U-Net architecture based on the Keras library.
@@ -51,29 +51,3 @@ Data aggregator created. Callbacks have been added to monitor the learning proce
 The final step is to load the model from a file and start training.
 
 The Model was builded in file ```model.ipynb```
-
-
-## Usage
-For testing model you need to open notebook ```test_model.ipynb```
-
-Do the next steps
-
-1. Set params
-```python
-image_path = '<image_path>'
-model_path = '<model_path>'
-weight_path = '<weight_path>'
-```
-2. Load model
-```python
-model = load_model(model_path)
-model.load_wights(weight_path)
-```
-3. Prepare images
-```python
-x = prepare_to_forward(image_path)
-```
-4. Get result
-```python
-y = model.predict(prepared_data)
-```
