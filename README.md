@@ -8,6 +8,12 @@ The dataset was taken from the data tab [dataset](https://www.kaggle.com/c/airbu
 
 The whole process of solving a task in ```main_notebook.ipynb```
 
+Model tested in file ```test_model.ipynb```
+
+Script for creation submission file is in ```submission_creator.ipynb```
+
+Submission file located in: ```csv_data/sample_submission_v2.csv```
+
 ## Installation
 
 You can download this repository by running this command in your terminal:
@@ -29,6 +35,9 @@ I used recommended tools and methods to accomplish the task:
 * Dice score
 
 ## Description
+
+! The model has been trained in only three epochs to show its correct operation and to get some result in the test sample.
+
 A water surface image segmentation model has been created.
 Implementation language Python. It used the U-Net architecture based on the Keras library.
 
@@ -45,7 +54,7 @@ The Model was builded in file ```model.ipynb```
 
 
 ## Usage
-For testing model you need to open notebook 'test_model.ipynb'
+For testing model you need to open notebook ```test_model.ipynb```
 
 Do the next steps
 
@@ -60,8 +69,7 @@ weight_path = '<weight_path>'
 model = load_model(model_path)
 model.load_wights(weight_path)
 ```
-
-3 Prepare images
+3. Prepare images
 ```python
 x = prepare_to_forward(image_path)
 ```
